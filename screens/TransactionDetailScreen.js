@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons'; // Install this package if not already installed
+import { MaterialIcons } from '@expo/vector-icons'; 
 
 const TransactionDetailScreen = ({ route }) => {
   const { transaction } = route.params;
 
-  // Helper function to format the amount with a sign
   const formatAmount = (amount, type) => {
     switch (type) {
       case 'Credit':
